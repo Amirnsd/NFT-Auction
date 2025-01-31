@@ -67,7 +67,6 @@ const AuctionsPage = () => {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* Navigation */}
       <nav className="px-6 py-4 flex justify-between items-center border-b border-gray-200">
         <div className="text-2xl font-bold">ArtBlock</div>
         <button className="px-4 py-2 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors">
@@ -75,7 +74,7 @@ const AuctionsPage = () => {
         </button>
       </nav>
 
-      {/* Main Content */}
+      
       <main className="max-w-7xl mx-auto px-6 py-12">
         <div className="flex justify-between items-center mb-12">
           <h1 className="text-4xl font-bold">Live Auctions</h1>
@@ -89,7 +88,7 @@ const AuctionsPage = () => {
           </div>
         </div>
 
-        {/* Auctions Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {auctions.map((auction) => (
             <Link href={`/auction/${auction.id}`} key={auction.id}>

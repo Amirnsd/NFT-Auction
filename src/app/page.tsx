@@ -13,7 +13,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* Navigation */}
+     
       <nav className="px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold">ArtBlock</div>
         <button className="px-4 py-2 bg-black text-white rounded-full font-medium hover:bg-gray-900 transition-all transform hover:scale-105">
@@ -21,7 +21,7 @@ const HomePage = () => {
         </button>
       </nav>
 
-      {/* Hero Section */}
+      
       <main className="max-w-6xl mx-auto px-6 py-20">
         <div className="text-center space-y-8">
           <h1
