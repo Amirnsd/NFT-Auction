@@ -1,0 +1,19 @@
+{
+    "name": "Enchanted Woods",
+    "description": "A mystical enchanted forest with glowing trees and floating magical creatures.",
+    "image": "A_mystical_enchanted_forest_with_glowing_trees_and.png",
+    "attributes": [
+        {
+            "trait_type": "Environment",
+            "value": "Forest"
+        },
+        {
+            "trait_type": "Elements",
+            "value": "Glowing Trees"
+        },
+        {
+            "trait_type": "Creatures",
+            "value": "Magical Beings"
+        }
+    ]
+}

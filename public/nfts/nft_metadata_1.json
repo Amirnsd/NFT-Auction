@@ -1,0 +1,19 @@
+{
+    "name": "Cyberpunk Metropolis",
+    "description": "A futuristic cyberpunk city with neon lights, flying cars, and high-tech skyscrapers.",
+    "image": "/mnt/data/A_futuristic_cyberpunk_city_with_neon_lights,_flyi.png",
+    "attributes": [
+        {
+            "trait_type": "Theme",
+            "value": "Cyberpunk"
+        },
+        {
+            "trait_type": "Lighting",
+            "value": "Neon"
+        },
+        {
+            "trait_type": "Elements",
+            "value": "Flying Cars, Skyscrapers"
+        }
+    ]
+}

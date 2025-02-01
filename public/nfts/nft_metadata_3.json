@@ -1,0 +1,19 @@
+{
+    "name": "Cyber Samurai",
+    "description": "A cyberpunk samurai standing in a neon-lit alley, holding a glowing katana.",
+    "image": "A_cyberpunk_samurai_standing_in_a_neon-lit_alley,_.png",
+    "attributes": [
+        {
+            "trait_type": "Character",
+            "value": "Samurai"
+        },
+        {
+            "trait_type": "Setting",
+            "value": "Cyberpunk Alley"
+        },
+        {
+            "trait_type": "Weapon",
+            "value": "Glowing Katana"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Astronaut Explorer",
+    "description": "An astronaut floating in deep space, surrounded by colorful nebulas and distant galaxies.",
+    "image": "An_astronaut_floating_in_deep_space,_surrounded_by.png",
+    "attributes": [
+        {
+            "trait_type": "Character",
+            "value": "Astronaut"
+        },
+        {
+            "trait_type": "Setting",
+            "value": "Deep Space"
+        },
+        {
+            "trait_type": "Visuals",
+            "value": "Colorful Nebulas"
+        }
+    ]
+}

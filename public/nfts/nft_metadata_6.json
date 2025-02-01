@@ -1,0 +1,19 @@
+{
+    "name": "Neon Speedster",
+    "description": "A futuristic race car speeding through a neon-lit cyber highway.",
+    "image": "A_futuristic_race_car_speeding_through_a_neon-lit_.png",
+    "attributes": [
+        {
+            "trait_type": "Vehicle",
+            "value": "Race Car"
+        },
+        {
+            "trait_type": "Setting",
+            "value": "Cyber Highway"
+        },
+        {
+            "trait_type": "Lighting",
+            "value": "Neon"
+        }
+    ]
+}

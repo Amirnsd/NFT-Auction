@@ -1,0 +1,19 @@
+{
+    "name": "Dragon's Domain",
+    "description": "A majestic dragon perched on a mountain peak, overlooking a mystical valley.",
+    "image": "A_majestic_dragon_perched_on_a_mountain_peak,_over.png",
+    "attributes": [
+        {
+            "trait_type": "Creature",
+            "value": "Dragon"
+        },
+        {
+            "trait_type": "Landscape",
+            "value": "Mountain Peak"
+        },
+        {
+            "trait_type": "Atmosphere",
+            "value": "Mystical"
+        }
+    ]
+}
