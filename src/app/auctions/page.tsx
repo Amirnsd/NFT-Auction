@@ -72,7 +72,7 @@ const AuctionsPage = () => {
     <div className="min-h-screen bg-white text-black">
      
       <nav className="px-6 py-4 flex items-center justify-between border-b border-gray-200">
-        <div className="text-2xl font-bold">ArtBlock</div>
+        <Link href={`/`} className="text-2xl font-bold">ArtBlock</Link>
         <div className="flex-1 mx-4 flex justify-center">
           <div className="relative w-1/3">
             <input
