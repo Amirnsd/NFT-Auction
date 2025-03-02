@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { getTimeLeft } from "@/lib/utils";
 
 type AuctionCardProps = {
     title: string;
@@ -21,27 +22,6 @@ export function AuctionCard({
     address,
 }: AuctionCardProps) {
     const [timeLeft, setTimeLeft] = useState(getTimeLeft(ends));
-
-    function getTimeLeft(ends: Date) {
-        const difference = +new Date(ends) - +new Date();
-        let timeLeft = {
-            days: 0,
-            hours: 0,
-            minutes: 0,
-            seconds: 0,
-        };
-
-        if (difference > 0) {
-            timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / (1000 * 60)) % 60),
-                seconds: Math.floor((difference / 1000) % 60),
-            };
-        }
-
-        return timeLeft;
-    }
 
     useEffect(() => {
         const timer = setInterval(() => {

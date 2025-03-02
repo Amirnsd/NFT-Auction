@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "@/providers";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
 
 const geistSans = Geist({
@@ -35,6 +36,7 @@ export default function RootLayout({
                         <Navbar />
                         <main className="container py-10">{children}</main>
                     </div>
+                    <Toaster />
                 </Providers>
             </body>
         </html>
