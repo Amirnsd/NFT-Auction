@@ -1,18 +1,23 @@
 import { AuctionCard } from "@/components/auction-card";
 
-export default function Home() {
-    return (
-        <div>
-            <AuctionCard
-                title="Doodle #5221"
-                image="https://i.seadn.io/s/raw/files/16fa6d078b38ae323e22564171d82e7d.png?auto=format&dpr=1&w=3840"
-                description="A community-driven collectibles project featuring art by Burnt Toast. Doodles come in a joyful range of colors, traits and sizes with a collection size of 10,000. Each Doodle allows its owner to vote for experiences and activations paid for by the Doodles Community Treasury. Burnt Toast is the working alias for Scott Martin, a Canadian-based illustrator, designer, animator and muralist."
-                price={1000}
-                ends={new Date("2025-03-07")}
-                address="0xdF8C3A7FFbdC144f462687120E4AE4C4e5E55abE"
-            />
+export default async function Home() {
+    const auctions = await fetch("http://localhost:3000/api/auctions").then(
+        (res) => res.json()
+    );
 
-            
+    return (
+        <div className="grid grid-cols-4 gap-4">
+            {auctions.map((auction: any) => (
+                <AuctionCard
+                    key={auction.address}
+                    title={auction.title}
+                    image={auction.image}
+                    description={auction.description}
+                    price={auction.price}
+                    ends={new Date(auction.ends)}
+                    address={auction.address}
+                />
+            ))}
         </div>
     );
 }

@@ -3,38 +3,22 @@ import { EndsIn } from "@/components/ends-in";
 import { Bid } from "@/components/bid";
 import { truncateAddress } from "@/lib/utils";
 
-export default function Auction() {
-    const nftData = {
-        title: "Doodle #5221",
-        image: "https://i.seadn.io/s/raw/files/16fa6d078b38ae323e22564171d82e7d.png?auto=format&dpr=1&w=3840",
-        description:
-            "A community-driven collectibles project featuring art by Burnt Toast. Doodles come in a joyful range of colors, traits and sizes with a collection size of 10,000. Each Doodle allows its owner to vote for experiences and activations paid for by the Doodles Community Treasury. Burnt Toast is the working alias for Scott Martin, a Canadian-based illustrator, designer, animator and muralist.",
-        price: 1000,
-        ends: new Date("2025-03-07"),
-        address: "0xdF8C3A7FFbdC144f462687120E4AE4C4e5E55abE",
-        creator: "0xdF8C3A7FFbdC144f462687120E4AE4C4e5E55abE",
-        bidders: [
-            {
-                address: "0xdF8C3A7ijfC144f462687120E4AE4C4e5E55abE",
-                time: new Date("2025-02-24"),
-            },
-            {
-                address: "0xdF8C3A7ijfC144f462687120E4AE4C4e5E55abF",
-                time: new Date("2025-02-28"),
-            },
-            {
-                address: "0xdF8C3A7ijfC144f462687120E4AE4C4e5E55abG",
-                time: new Date("2025-03-01"),
-            },
-        ],
-    };
+export default async function Auction({
+    params,
+}: {
+    params: Promise<{ address: string }>;
+}) {
+    const { address } = await params;
+    const auction = await fetch(
+        `http://localhost:3000/api/auctions/${address}`
+    ).then((res) => res.json());
 
     return (
         <div className="grid grid-cols-2 gap-10 h-full">
             <div className="rounded-lg overflow-hidden">
                 <picture>
                     <img
-                        src={nftData.image}
+                        src={auction.image}
                         alt=""
                         className="object-cover h-full w-full"
                     />
@@ -46,12 +30,12 @@ export default function Auction() {
                     <div className="space-y-4 h-full">
                         <div>
                             <h1 className="font-bold text-5xl">
-                                {nftData.title}
+                                {auction.title}
                             </h1>
                             <p className="text-muted-foreground">
                                 Creator:{" "}
                                 {truncateAddress(
-                                    nftData.creator as `0x${string}`
+                                    auction.creator as `0x${string}`
                                 )}
                             </p>
                         </div>
@@ -65,7 +49,7 @@ export default function Auction() {
                             </div>
 
                             <p className="text-muted-foreground">
-                                {nftData.description}
+                                {auction.description}
                             </p>
                         </div>
 
@@ -77,7 +61,7 @@ export default function Auction() {
                                 </span>
                             </div>
 
-                            <EndsIn ends={nftData.ends} />
+                            <EndsIn ends={new Date(auction.ends)} />
                         </div>
 
                         <div className="space-y-1 flex flex-col">
@@ -89,7 +73,7 @@ export default function Auction() {
                             </div>
 
                             <div className="border rounded-lg divide-y px-2">
-                                {nftData.bidders.map((bidder) => (
+                                {auction.bidders.map((bidder: any) => (
                                     <div
                                         key={bidder.address}
                                         className="flex items-center justify-between p-2"
@@ -100,7 +84,9 @@ export default function Auction() {
                                             )}
                                         </p>
                                         <p>
-                                            {bidder.time.toLocaleDateString()}
+                                            {new Date(
+                                                bidder.time
+                                            ).toLocaleDateString()}
                                         </p>
                                     </div>
                                 ))}
@@ -108,7 +94,7 @@ export default function Auction() {
                         </div>
                     </div>
 
-                    <Bid minBid={nftData.price} />
+                    <Bid minBid={auction.price} />
                 </div>
             </div>
         </div>

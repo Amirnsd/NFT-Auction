@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ConnectKitButton } from "connectkit";
 import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 export function Navbar() {
     return (
@@ -12,6 +13,12 @@ export function Navbar() {
                     <Link href="/" className="font-bold text-3xl">
                         ArtBlock
                     </Link>
+
+                    <Input
+                        type="text"
+                        placeholder="Search"
+                        className="w-[300px]"
+                    />
 
                     <ConnectKitButton.Custom>
                         {({
