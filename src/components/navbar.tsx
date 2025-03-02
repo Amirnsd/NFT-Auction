@@ -20,27 +20,35 @@ export function Navbar() {
                         className="w-[300px]"
                     />
 
-                    <ConnectKitButton.Custom>
-                        {({
-                            isConnected,
-                            isConnecting,
-                            show,
-                            truncatedAddress,
-                        }) => (
-                            <Button
-                                onClick={show}
-                                className="hover:cursor-pointer"
-                                disabled={isConnecting}
-                                variant={isConnected ? "secondary" : "default"}
-                            >
-                                {isConnected
-                                    ? truncatedAddress
-                                    : isConnecting
-                                    ? "Connecting..."
-                                    : "Connect Wallet"}
-                            </Button>
-                        )}
-                    </ConnectKitButton.Custom>
+                    <div className="space-x-2">
+                        <Button variant="ghost" asChild>
+                            <Link href="/favorites">Favorites</Link>
+                        </Button>
+
+                        <ConnectKitButton.Custom>
+                            {({
+                                isConnected,
+                                isConnecting,
+                                show,
+                                truncatedAddress,
+                            }) => (
+                                <Button
+                                    onClick={show}
+                                    className="hover:cursor-pointer"
+                                    disabled={isConnecting}
+                                    variant={
+                                        isConnected ? "secondary" : "default"
+                                    }
+                                >
+                                    {isConnected
+                                        ? truncatedAddress
+                                        : isConnecting
+                                        ? "Connecting..."
+                                        : "Connect Wallet"}
+                                </Button>
+                            )}
+                        </ConnectKitButton.Custom>
+                    </div>
                 </div>
             </nav>
         </header>

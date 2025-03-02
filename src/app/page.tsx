@@ -1,6 +1,6 @@
 import { AuctionCard } from "@/components/auction-card";
 
-export default async function Home() {
+export default async function HomePage() {
     const auctions = await fetch("http://localhost:3000/api/auctions").then(
         (res) => res.json()
     );
