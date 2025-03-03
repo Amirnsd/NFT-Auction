@@ -44,11 +44,11 @@
     {
         "title": "Nakamigos #4057",
         "image": "https://i.seadn.io/s/raw/files/aeb2d3d104fef2d628af3553f9feaec5.png?auto=format&dpr=1&w=1000",
-        "description": "Featuring a bold and vibrant character design, this Nakamigos #4057 artwork captivates with intricate details and a dynamic color palette. Sale ends on 2025-03-02T18:01:00Z.",
+        "description": "Featuring a bold and vibrant character design, this Nakamigos #4057 artwork captivates with intricate details and a dynamic color palette.",
         "price": 417.38,
         "ends": "2025-03-09",
         "address": "0x64E2Eb3D5520F18BEd1bdE4F38F851a9F9A74f3D",
-        "creator": "CryptoNaka",
+        "creator": "0x25813078da813F687ca6a44F199E8f6A78f49E66",
         "bidders": [
             {
                 "address": "0xA1B2C3D4E5F60718293A4B5C6D7E8F9012345678",
@@ -63,7 +63,7 @@
         "price": 1990.30,
         "ends": "2025-03-17",
         "address": "0x7DBB4bdCfE614398D1a68ecc219F15280d0959E0",
-        "creator": "SpectralArtist",
+        "creator": "0x7BdE4488F40794e459b7D171a3232D25B09d89e0",
         "bidders": [
             {
                 "address": "0xUserAddress1",
@@ -82,7 +82,7 @@
         "price": 10,
         "ends": "2025-03-27",
         "address": "0xFbE0c54d696Fa6c93f35D4CA7D656561816C15F6",
-        "creator": "DudMaster",
+        "creator": "0x9b65Ac249749F307d3fb1c72095ca01f86101542",
         "bidders": [
             {
                 "address": "0xB1B2C3D4E5F60718293A4B5C6D7E8F9012345678",
@@ -97,7 +97,7 @@
         "price": 14.29,
         "ends": "2025-04-01",
         "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-        "creator": "BlazeCreator",
+        "creator": "0xA199586D2BB372ff5fa8520a3aBA87D067B75EAE",
         "bidders": [
             {
                 "address": "0xC1B2C3D4E5F60718293A4B5C6D7E8F9012345678",
@@ -112,7 +112,7 @@
         "price": 1.16,
         "ends": "2025-03-12",
         "address": "0xd5FBDa4C79F38920159fE5f22DF9655FDe292d47",
-        "creator": "PudgyArtist",
+        "creator": "0x5dcFAE56A8195840d4A3622f0BF79b6465B214e7",
         "bidders": [
             {
                 "address": "0xD1B2C3D4E5F60718293A4B5C6D7E8F9012345678",
@@ -127,7 +127,7 @@
         "price": 21.27,
         "ends": "2025-04-10",
         "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-        "creator": "WinkRealmCreator",
+        "creator": "0xDd83b8D42605647F58CbFEC5F95A1b71F4920069",
         "bidders": [
             {
                 "address": "0xE1B2C3D4E5F60718293A4B5C6D7E8F9012345678",
@@ -142,7 +142,7 @@
         "price": 27.14,
         "ends": "2025-03-03T06:02:00",
         "address": "0x11357bFDD4f365fb15B094658aaFe38b7dcBF5b8",
-        "creator": "ElementalCreator",
+        "creator": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
         "bidders": [
             {
                 "address": "0xF1B2C3D4E5F60718293A4B5C6D7E8F9012345678",
@@ -157,7 +157,7 @@
         "price": 13.44,
         "ends": "2025-05-01T14:14:00",
         "address": "0x7Cb027917b27BCb5963C548657a008BF45b25BDc",
-        "creator": "CaptainzCreator",
+        "creator": "0x68d3A973E7272EB388022a5C6518d9b2a2e66fBf",
         "bidders": [
             {
                 "address": "0xF1A2B3C4D5E60718293A4B5C6D7E8F9012345679",
@@ -172,7 +172,7 @@
         "price": 75,
         "ends": "2025-04-11",
         "address": "0xDFaa75323fB721e5f29D43859390f62Cc4B600b8",
-        "creator": "CryptoPunkCreator",
+        "creator": "0x1FA57f879417e029Ef57D7Ce915b0aA56A507C31",
         "bidders": [
             {
                 "address": "0xF2B2C3D4E5F60718293A4B5C6D7E8F901234567A",
@@ -187,7 +187,7 @@
         "price": 17.77,
         "ends": "2025-03-23T18:16:00",
         "address": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
-        "creator": "CaptainzCreator",
+        "creator": "0xbA3cB449bD2B4ADddBc894D8697F5170800EAdeC",
         "bidders": [
             {
                 "address": "0xA2B3C4D5E6F60718293A4B5C6D7E8F9012345670",
